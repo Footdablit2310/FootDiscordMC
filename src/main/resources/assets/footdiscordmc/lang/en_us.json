@@ -1,0 +1,13 @@
+{
+  "itemGroup.footdiscordmc": "Example Mod Tab",
+  "block.footdiscordmc.example_block": "Example Block",
+  "item.footdiscordmc.example_item": "Example Item",
+
+  "footdiscordmc.configuration.title": "FootDiscordMC Configs",
+  "footdiscordmc.configuration.section.footdiscordmc.common.toml": "FootDiscordMC Configs",
+  "footdiscordmc.configuration.section.footdiscordmc.common.toml.title": "FootDiscordMC Configs",
+  "footdiscordmc.configuration.items": "Item List",
+  "footdiscordmc.configuration.logDirtBlock": "Log Dirt Block",
+  "footdiscordmc.configuration.magicNumberIntroduction": "Magic Number Text",
+  "footdiscordmc.configuration.magicNumber": "Magic Number"
+}
