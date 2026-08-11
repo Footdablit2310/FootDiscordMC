@@ -28,7 +28,8 @@ public class FootDiscordMCMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        FootDiscordHTTPUtil.init(false);
+        assert FootConfigUtil.getSSL() != null;
+        FootDiscordHTTPUtil.init(!FootConfigUtil.getSSL().get());
 
         try {
             SSLContext sslContext = FootDiscordSSLUtil.createSecureClient().sslContext();
