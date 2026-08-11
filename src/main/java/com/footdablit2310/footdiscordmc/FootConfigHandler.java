@@ -3,7 +3,7 @@ package com.footdablit2310.footdiscordmc;
 import net.neoforged.neoforge.common.ModConfigSpec;
 import org.apache.commons.lang3.tuple.Pair;
 
-class FootConfigHandler implements FootConfigUtil{
+class FootConfigHandler {
     public final ModConfigSpec.IntValue port;
     public final ModConfigSpec.BooleanValue ssl;
 

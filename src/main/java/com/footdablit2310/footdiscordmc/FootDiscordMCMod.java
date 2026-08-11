@@ -28,13 +28,13 @@ public class FootDiscordMCMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        assert FootConfigUtil.getSSL() != null;
-        FootDiscordHTTPUtil.init(!FootConfigUtil.getSSL().get());
+        assert FootConfigHandler.CONFIG.getSSL() != null;
+        FootDiscordHTTPUtil.init(!FootConfigHandler.CONFIG.getSSL().get());
 
         try {
             SSLContext sslContext = FootDiscordSSLUtil.createSecureClient().sslContext();
-            assert FootConfigUtil.getPort() != null;
-            FootHttpListener.start(FootConfigUtil.getPort().getAsInt(), sslContext);
+            assert FootConfigHandler.CONFIG.getPort() != null;
+            FootHttpListener.start(FootConfigHandler.CONFIG.getPort().getAsInt(), sslContext);
         } catch (Exception e) {
             e.printStackTrace();
         }
